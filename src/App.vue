@@ -118,8 +118,8 @@
             <div class="w-full flex flex-col gap-4 mt-5 h-full">
                 <TransitionGroup>
                     <TaskCard
-                        v-for="(task, index) in taskList"
-                        :key="index"
+                        v-for="task in taskList"
+                        :key="task"
                         :task="task"
                         :handlerCompleted="completedTask"
                         :handlerDeleted="handlerDeleted"
